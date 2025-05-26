@@ -1,6 +1,5 @@
 import random
 
-# 全局菜单配置
 MENU_CATEGORIES = {
     "Main Meals": ["burger", "cheeseburger", "chicken_wrap"],
     "Snacks & Sides": ["fries", "nuggets", "onion_rings"],
@@ -66,7 +65,7 @@ def show_help():
 def show_menu():
     print("========= 🧾 MENU =========")
     item_number = 1
-    menu_items = {}  # 用于存储编号和产品的映射
+    menu_items = {}
     for category, items in MENU_CATEGORIES.items():
         print(f"\n--- {category} ---")
         for item in items:
